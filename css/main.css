@@ -1,0 +1,50 @@
+body{
+  background-color: #C5E4E7 ;
+}
+
+.summa-input{
+  background-color: #e2f1fa;
+}
+
+.btn-num5, .btn-num10, .btn-num15, .btn-num25, .btn-num50{
+  background-color: #00474B;
+  width: 31%;
+}
+
+.btn-num5, .btn-num25{
+  margin-left: 0 !important;
+}
+
+.btn-num15, .custom-input{
+  margin-right: 0 !important;
+  width: 31%;
+}
+
+.custom-input{
+  background-color: #F3F8FA;
+}
+
+.custom-input::placeholder{
+  color: #5B9398;
+}
+
+.number-person-input{
+  background-color: #e2f1fa;
+}
+
+.col-6:last-child{
+  background-color: #00474B;
+}
+
+.person-content-text, .total-content-text{
+  color: #5B9398;
+}
+
+.person-sum, .total-sum{
+  color: #2ABEA8;
+}
+
+.reset-input{
+  color: #00474B;
+  background-color: #0D686D;
+}
