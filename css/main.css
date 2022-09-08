@@ -3,12 +3,16 @@ body{
 }
 
 .summa-input{
-  background-color: #e2f1fa;
+  background-color: #c6e6f9;
 }
 
 .btn-num5, .btn-num10, .btn-num15, .btn-num25, .btn-num50{
   background-color: #00474B;
   width: 31%;
+}
+
+.btn-num5::after, .btn-num10::after, .btn-num15::after, .btn-num25::after, .btn-num50::after{
+  content: " %";
 }
 
 .btn-num5, .btn-num25{
@@ -21,7 +25,7 @@ body{
 }
 
 .custom-input{
-  background-color: #F3F8FA;
+  background-color: #c6e6f9;
 }
 
 .custom-input::placeholder{
@@ -29,7 +33,7 @@ body{
 }
 
 .number-person-input{
-  background-color: #e2f1fa;
+  background-color: #c6e6f9;
 }
 
 .col-6:last-child{
@@ -42,6 +46,12 @@ body{
 
 .person-sum, .total-sum{
   color: #2ABEA8;
+}
+
+.person-sum::before, .total-sum::before{
+  content: "$";
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .reset-input{

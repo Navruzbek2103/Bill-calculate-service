@@ -15,19 +15,22 @@
       <div class="col-6 px-5">
         <form class="form">
           <label class="bill-label fs-4 fw-bold">Bill</label>
-          <input type="text"  class="summa-input w-100 text-end fs-3 border-0 rounded-3 py-1 px-3 mt-2 fw-bold" placeholder="0">
+          <input type="number" class="summa-input w-100 text-end fs-3 border-0 rounded-3 py-1 px-3 mt-2 fw-bold" placeholder="0">
+
+
           <p class="select-tip mt-5 fs-4 mb-1 fw-bold">Select Tip %</p>
           <div class="btn-group d-flex flex-wrap">
-            <button class="btn-num5 px-5 fw-bold rounded-3 border-0 text-white m-2 py-2 fs-4">5 %</button>
-            <button class="btn-num10 px-5 fw-bold rounded-3 border-0 text-white m-2 py-2 fs-4">10 %</button>
-            <button class="btn-num15 px-5 fw-bold rounded-3 border-0 text-white m-2 py-2 fs-4">15 %</button>
-            <button class="btn-num25 px-5 fw-bold rounded-3 border-0 text-white m-2 py-2 fs-4">25 %</button>
-            <button class="btn-num50 px-5 fw-bold rounded-3 border-0 text-white m-2 py-2 fs-4">50 %</button>
-            <input type="text" class="custom-input  fw-bold rounded-3 text-center border-0  m-2 py-2 fs-4" placeholder="Custom">
+            <button class="btn-num5 px-5 fw-bold rounded-3 border-0 text-white m-2 py-2 fs-4">5</button>
+            <button class="btn-num10 px-5 fw-bold rounded-3 border-0 text-white m-2 py-2 fs-4">10</button>
+            <button class="btn-num15 px-5 fw-bold rounded-3 border-0 text-white m-2 py-2 fs-4">15</button>
+            <button class="btn-num25 px-5 fw-bold rounded-3 border-0 text-white m-2 py-2 fs-4">25</button>
+            <button class="btn-num50 px-5 fw-bold rounded-3 border-0 text-white m-2 py-2 fs-4">50</button>
+            <input type="number" class="custom-input  fw-bold rounded-3 text-center border-0  m-2 py-2 fs-4" placeholder="Custom">
           </div>
           <label class="number-people mt-5 mb-0 fs-4 fw-bold">Number of People
           </label>
-          <input type="text" placeholder="0" class="number-person-input w-100 border-0 py-1 rounded-3 fs-3 text-end px-3 mt-3 fw-bold">
+          <input type="number" placeholder="0" class="number-person-input w-100 border-0 py-1 rounded-3 fs-3 text-end px-3 my-3 fw-bold">
+          <!-- <button type="submit" class="btn btn-info w-100 fs-5 fw-bold fst-italic">Calculate</button> -->
         </form>
       </div>
 
@@ -37,21 +40,21 @@
             <h2 class="person-content-title text-white">Tip Amount</h2>
             <p class="person-content-text fs-5 fw-bold">/ person</p>
           </div>
-          <p class="person-sum fw-bold fs-1">$<span class="person-sum-span">0.00</span></p>
+          <p class="person-sum fw-bold fs-1">0.00</p>
         </div>
         <div class="total d-flex justify-content-between align-items-center mb-5">
           <div class="total-content">
             <h2 class="total-content-title text-white">Total</h2>
             <p class="total-content-text fs-5 fw-bold">/ person</p>
           </div>
-          <p class="total-sum fs-1 fw-bold">$<span class="total-sum-span">0.00</span></p>
+          <p class="total-sum fs-1 fw-bold">0.00</p>
         </div>
         <input type="reset" class="reset-input w-100 border-0 mt-5 rounded-3 fs-4 fw-bold py-2 mb-0 " value="RESET">
       </div>
     </div>
   </div>
 
-  <script src="./js/main.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
