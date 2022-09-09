@@ -9,6 +9,7 @@ let btnPercentageCustom = document.querySelector(".custom-input");
 let numberPersonInput = document.querySelector(".number-person-input")
 let personSumma = document.querySelector(".person-sum");
 let totalSum = document.querySelector(".total-sum");
+let elResetInput = document.querySelector(".reset-input");
 
 
 let num1 = 0;
@@ -37,7 +38,8 @@ btnPercentage5.addEventListener('click', (t) => {
     num1 = Number(btnPercentage5.textContent);
     valueInput = Number(summaInput.value);
     personSumma.textContent = valueInput * (num1 / 100);
-    totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+    totalSum.textContent = valueInput + (valueInput * (num1 / 100));
+    btnPercentageCustom.value = "Custom"
   }
 })
 
@@ -65,6 +67,7 @@ btnPercentage10.addEventListener('click', (t) => {
     valueInput = Number(summaInput.value);
     personSumma.textContent = valueInput * (num1 / 100);
     totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+    btnPercentageCustom.value = "Custom"
   }
 })
 
@@ -92,6 +95,7 @@ btnPercentage15.addEventListener('click', (t) => {
     valueInput = Number(summaInput.value);
     personSumma.textContent = valueInput * (num1 / 100);
     totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+    btnPercentageCustom.value = "Custom"
   }
 })
 
@@ -119,6 +123,7 @@ btnPercentage25.addEventListener('click', (t) => {
     valueInput = Number(summaInput.value);
     personSumma.textContent = valueInput * (num1 / 100);
     totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+    btnPercentageCustom.value = "Custom"
   }
 })
 
@@ -146,6 +151,7 @@ btnPercentage50.addEventListener('click', (t) => {
     valueInput = Number(summaInput.value);
     personSumma.textContent = valueInput * (num1 / 100);
     totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+    btnPercentageCustom.value = "Custom"
   }
 })
 
@@ -174,4 +180,9 @@ btnPercentageCustom.addEventListener('input', (t) => {
     personSumma.textContent = valueInput * (num1 / 100);
     totalSum.textContent = valueInput + (valueInput * (num1 / 100))
   }
+})
+
+elResetInput.addEventListener("click", () => {
+  personSumma.textContent = "0.00";
+  totalSum.textContent = "0.00";
 })

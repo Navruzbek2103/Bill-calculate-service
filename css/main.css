@@ -55,6 +55,14 @@ body{
 }
 
 .reset-input{
-  color: #00474B;
+  color: #10e0eb;
   background-color: #0D686D;
+}
+
+.reset-input:hover{
+  box-shadow: 0 0 15px 5px cyan;
+}
+
+.reset-input:active{
+  transform: scale(.97);
 }
