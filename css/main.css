@@ -1,6 +1,10 @@
 body{
   background-color: #C5E4E7 ;
 }
+.summa-input::-webkit-outer-spin-button,
+.summa-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 .summa-input{
   background-color: #c6e6f9;
@@ -24,6 +28,11 @@ body{
   width: 31%;
 }
 
+.custom-input::-webkit-outer-spin-button,
+.custom-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .custom-input{
   background-color: #c6e6f9;
 }
@@ -32,11 +41,16 @@ body{
   color: #5B9398;
 }
 
+.number-person-input::-webkit-outer-spin-button,
+.number-person-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 .number-person-input{
-  background-color: #c6e6f9;
+  background-color: #c6e6f9 !important;
 }
 
-.col-6:last-child{
+
+.col-lg-6:last-child{
   background-color: #00474B;
 }
 
@@ -61,6 +75,7 @@ body{
 
 .reset-input:hover{
   box-shadow: 0 0 15px 5px cyan;
+  text-shadow: 1px 1px 4px blue !important;
 }
 
 .reset-input:active{

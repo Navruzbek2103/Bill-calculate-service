@@ -23,8 +23,8 @@ btnPercentage5.addEventListener('click', (t) => {
     countPerson = Number(numberPersonInput.value);
 
     if(countPerson > 0){
-      personSumma.textContent = (valueInput * (num1 / 100)) / countPerson;
-      totalSum.textContent = (valueInput + (valueInput * (num1 / 100))) / countPerson
+      personSumma.textContent = ((valueInput * (num1 / 100)) / countPerson).toFixed(2);
+      totalSum.textContent = ((valueInput + (valueInput * (num1 / 100))) / countPerson).toFixed(2)
     }
     else if(countPerson === 0){
       personSumma.textContent = valueInput * (num1 / 100);
@@ -37,8 +37,8 @@ btnPercentage5.addEventListener('click', (t) => {
   else if(summaInput.value != ""){
     num1 = Number(btnPercentage5.textContent);
     valueInput = Number(summaInput.value);
-    personSumma.textContent = valueInput * (num1 / 100);
-    totalSum.textContent = valueInput + (valueInput * (num1 / 100));
+    personSumma.textContent = (valueInput * (num1 / 100)).toFixed(2);
+    totalSum.textContent = (valueInput + (valueInput * (num1 / 100))).toFixed(2);
     btnPercentageCustom.value = "Custom"
   }
 })
@@ -51,8 +51,8 @@ btnPercentage10.addEventListener('click', (t) => {
     countPerson = Number(numberPersonInput.value);
 
     if(countPerson > 0){
-      personSumma.textContent = (valueInput * (num1 / 100)) / countPerson;
-      totalSum.textContent = (valueInput + (valueInput * (num1 / 100))) / countPerson
+      personSumma.textContent = ((valueInput * (num1 / 100)) / countPerson).toFixed(2);
+      totalSum.textContent = ((valueInput + (valueInput * (num1 / 100))) / countPerson).toFixed(2)
     }
     else if(countPerson === 0){
       personSumma.textContent = valueInput * (num1 / 100);
@@ -65,8 +65,8 @@ btnPercentage10.addEventListener('click', (t) => {
   else if(summaInput.value != ""){
     num1 = Number(btnPercentage10.textContent);
     valueInput = Number(summaInput.value);
-    personSumma.textContent = valueInput * (num1 / 100);
-    totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+    personSumma.textContent = (valueInput * (num1 / 100)).toFixed(2);
+    totalSum.textContent = (valueInput + (valueInput * (num1 / 100))).toFixed(2)
     btnPercentageCustom.value = "Custom"
   }
 })
@@ -79,8 +79,8 @@ btnPercentage15.addEventListener('click', (t) => {
     countPerson = Number(numberPersonInput.value);
 
     if(countPerson > 0){
-      personSumma.textContent = (valueInput * (num1 / 100)) / countPerson;
-      totalSum.textContent = (valueInput + (valueInput * (num1 / 100))) / countPerson
+      personSumma.textContent = ((valueInput * (num1 / 100)) / countPerson).toFixed(2);
+      totalSum.textContent = ((valueInput + (valueInput * (num1 / 100))) / countPerson).toFixed(2)
     }
     else if(countPerson === 0){
       personSumma.textContent = valueInput * (num1 / 100);
@@ -93,8 +93,8 @@ btnPercentage15.addEventListener('click', (t) => {
   else if(summaInput.value != ""){
     num1 = Number(btnPercentage15.textContent);
     valueInput = Number(summaInput.value);
-    personSumma.textContent = valueInput * (num1 / 100);
-    totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+    personSumma.textContent = (valueInput * (num1 / 100)).toFixed(2);
+    totalSum.textContent = (valueInput + (valueInput * (num1 / 100))).toFixed(2);
     btnPercentageCustom.value = "Custom"
   }
 })
@@ -107,8 +107,8 @@ btnPercentage25.addEventListener('click', (t) => {
     countPerson = Number(numberPersonInput.value);
 
     if(countPerson > 0){
-      personSumma.textContent = (valueInput * (num1 / 100)) / countPerson;
-      totalSum.textContent = (valueInput + (valueInput * (num1 / 100))) / countPerson
+      personSumma.textContent = ((valueInput * (num1 / 100)) / countPerson).toFixed(2);
+      totalSum.textContent = ((valueInput + (valueInput * (num1 / 100))) / countPerson).toFixed(2)
     }
     else if(countPerson === 0){
       personSumma.textContent = valueInput * (num1 / 100);
@@ -121,8 +121,8 @@ btnPercentage25.addEventListener('click', (t) => {
   else if(summaInput.value != ""){
     num1 = Number(btnPercentage25.textContent);
     valueInput = Number(summaInput.value);
-    personSumma.textContent = valueInput * (num1 / 100);
-    totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+    personSumma.textContent = (valueInput * (num1 / 100)).toFixed(2);
+    totalSum.textContent = (valueInput + (valueInput * (num1 / 100))).toFixed(2)
     btnPercentageCustom.value = "Custom"
   }
 })
@@ -135,8 +135,8 @@ btnPercentage50.addEventListener('click', (t) => {
     countPerson = Number(numberPersonInput.value);
 
     if(countPerson > 0){
-      personSumma.textContent = (valueInput * (num1 / 100)) / countPerson;
-      totalSum.textContent = (valueInput + (valueInput * (num1 / 100))) / countPerson
+      personSumma.textContent = ((valueInput * (num1 / 100)) / countPerson).toFixed(2);
+      totalSum.textContent = ((valueInput + (valueInput * (num1 / 100))) / countPerson).toFixed(2)
     }
     else if(countPerson === 0){
       personSumma.textContent = valueInput * (num1 / 100);
@@ -149,8 +149,8 @@ btnPercentage50.addEventListener('click', (t) => {
   else if(summaInput.value != ""){
     num1 = Number(btnPercentage50.textContent);
     valueInput = Number(summaInput.value);
-    personSumma.textContent = valueInput * (num1 / 100);
-    totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+    personSumma.textContent = (valueInput * (num1 / 100)).toFixed(2);
+    totalSum.textContent = (valueInput + (valueInput * (num1 / 100))).toFixed(2)
     btnPercentageCustom.value = "Custom"
   }
 })
@@ -163,8 +163,8 @@ btnPercentageCustom.addEventListener('input', (t) => {
     countPerson = Number(numberPersonInput.value);
 
     if(countPerson > 0){
-      personSumma.textContent = (valueInput * (num1 / 100)) / countPerson;
-      totalSum.textContent = (valueInput + (valueInput * (num1 / 100))) / countPerson
+      personSumma.textContent = ((valueInput * (num1 / 100)) / countPerson).toFixed(2);
+      totalSum.textContent = ((valueInput + (valueInput * (num1 / 100))) / countPerson).toFixed(2)
     }
     else if(countPerson === 0){
       personSumma.textContent = valueInput * (num1 / 100);
@@ -177,8 +177,8 @@ btnPercentageCustom.addEventListener('input', (t) => {
   else if(summaInput.value != ""){
     num1 = Number(btnPercentageCustom.value);
     valueInput = Number(summaInput.value);
-    personSumma.textContent = valueInput * (num1 / 100);
-    totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+    personSumma.textContent = (valueInput * (num1 / 100)).toFixed(2);
+    totalSum.textContent = (valueInput + (valueInput * (num1 / 100))).toFixed(2)
   }
 })
 
