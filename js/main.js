@@ -11,75 +11,167 @@ let personSumma = document.querySelector(".person-sum");
 let totalSum = document.querySelector(".total-sum");
 
 
+let num1 = 0;
+let valueInput = 0;
+let countPerson = 0;
+btnPercentage5.addEventListener('click', (t) => {
+  t.preventDefault()
+  if(summaInput.value != "" && numberPersonInput.value != ""){
+    num1 = Number(btnPercentage5.textContent);
+    valueInput = Number(summaInput.value);
+    countPerson = Number(numberPersonInput.value);
 
-elForm.addEventListener("change", (e) => {
-  e.preventDefault();
-
-  summaInput = summaInput.value * 1;
-  if(numberPersonInput.value != ""){
-    pluralMan();
+    if(countPerson > 0){
+      personSumma.textContent = (valueInput * (num1 / 100)) / countPerson;
+      totalSum.textContent = (valueInput + (valueInput * (num1 / 100))) / countPerson
+    }
+    else if(countPerson === 0){
+      personSumma.textContent = valueInput * (num1 / 100);
+      totalSum.textContent = valueInput + (valueInput * (num1 / 100));
+    }
+    else if(countPerson < 0){
+      numberPersonInput.value = "Bunday qiymat mavjud emas";
+    }
   }
-  else{
-    singleMan();
+  else if(summaInput.value != ""){
+    num1 = Number(btnPercentage5.textContent);
+    valueInput = Number(summaInput.value);
+    personSumma.textContent = valueInput * (num1 / 100);
+    totalSum.textContent = valueInput + (valueInput * (num1 / 100))
   }
+})
 
+btnPercentage10.addEventListener('click', (t) => {
+  t.preventDefault()
+  if(summaInput.value != "" && numberPersonInput.value != ""){
+    num1 = Number(btnPercentage10.textContent);
+    valueInput = Number(summaInput.value);
+    countPerson = Number(numberPersonInput.value);
 
-  function pluralMan(){
-    alert(true)
+    if(countPerson > 0){
+      personSumma.textContent = (valueInput * (num1 / 100)) / countPerson;
+      totalSum.textContent = (valueInput + (valueInput * (num1 / 100))) / countPerson
+    }
+    else if(countPerson === 0){
+      personSumma.textContent = valueInput * (num1 / 100);
+      totalSum.textContent = valueInput + (valueInput * (num1 / 100));
+    }
+    else if(countPerson < 0){
+      numberPersonInput.value = "Bunday qiymat mavjud emas";
+    }
   }
-
-
-  function singleMan(){
-    btnPercentage5.addEventListener("click", (r) => {
-      r.preventDefault();
-      btnPercentage5 = Number(btnPercentage5.textContent);
-
-      personSumma.textContent = summaInput * (btnPercentage5 / 100);
-      totalSum.textContent = summaInput + (summaInput * (btnPercentage5 / 100));
-    });
-
-
-    btnPercentage10.addEventListener("click", (r) => {
-      r.preventDefault();
-      btnPercentage10 = Number(btnPercentage10.textContent);
-
-      personSumma.textContent = summaInput * (btnPercentage10 / 100);
-      totalSum.textContent = summaInput + (summaInput * (btnPercentage10 / 100));
-    })
-
-    btnPercentage15.addEventListener("click", (r) => {
-      r.preventDefault();
-      btnPercentage15 = Number(btnPercentage15.textContent)
-
-      personSumma.textContent = summaInput * (btnPercentage15 / 100);
-      totalSum.textContent = summaInput + (summaInput * (btnPercentage15 / 100));
-    })
-
-    btnPercentage25.addEventListener("click", (r) => {
-      r.preventDefault();
-      btnPercentage25 = Number(btnPercentage25.textContent);
-
-      personSumma.textContent = summaInput * (btnPercentage25 / 100);
-      totalSum.textContent = summaInput + (summaInput * (btnPercentage25 / 100));
-    })
-
-    btnPercentage50.addEventListener("click", (r) => {
-      r.preventDefault();
-      btnPercentage50 = Number(btnPercentage50.textContent);
-
-      personSumma.textContent = summaInput * (btnPercentage50 / 100);
-      totalSum.textContent = summaInput + (summaInput * (btnPercentage50 / 100));
-    })
-
-    btnPercentageCustom.addEventListener("input", (r) => {
-      r.preventDefault();
-      btnPercentageCustom = Number(btnPercentageCustom.value);
-
-      personSumma.textContent = summaInput * (btnPercentageCustom / 100);
-      totalSum.textContent = summaInput + (summaInput * (btnPercentageCustom / 100));
-    })
+  else if(summaInput.value != ""){
+    num1 = Number(btnPercentage10.textContent);
+    valueInput = Number(summaInput.value);
+    personSumma.textContent = valueInput * (num1 / 100);
+    totalSum.textContent = valueInput + (valueInput * (num1 / 100))
   }
+})
 
+btnPercentage15.addEventListener('click', (t) => {
+  t.preventDefault()
+  if(summaInput.value != "" && numberPersonInput.value != ""){
+    num1 = Number(btnPercentage15.textContent);
+    valueInput = Number(summaInput.value);
+    countPerson = Number(numberPersonInput.value);
 
+    if(countPerson > 0){
+      personSumma.textContent = (valueInput * (num1 / 100)) / countPerson;
+      totalSum.textContent = (valueInput + (valueInput * (num1 / 100))) / countPerson
+    }
+    else if(countPerson === 0){
+      personSumma.textContent = valueInput * (num1 / 100);
+      totalSum.textContent = valueInput + (valueInput * (num1 / 100));
+    }
+    else if(countPerson < 0){
+      numberPersonInput.value = "Bunday qiymat mavjud emas";
+    }
+  }
+  else if(summaInput.value != ""){
+    num1 = Number(btnPercentage15.textContent);
+    valueInput = Number(summaInput.value);
+    personSumma.textContent = valueInput * (num1 / 100);
+    totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+  }
+})
 
+btnPercentage25.addEventListener('click', (t) => {
+  t.preventDefault()
+  if(summaInput.value != "" && numberPersonInput.value != ""){
+    num1 = Number(btnPercentage25.textContent);
+    valueInput = Number(summaInput.value);
+    countPerson = Number(numberPersonInput.value);
+
+    if(countPerson > 0){
+      personSumma.textContent = (valueInput * (num1 / 100)) / countPerson;
+      totalSum.textContent = (valueInput + (valueInput * (num1 / 100))) / countPerson
+    }
+    else if(countPerson === 0){
+      personSumma.textContent = valueInput * (num1 / 100);
+      totalSum.textContent = valueInput + (valueInput * (num1 / 100));
+    }
+    else if(countPerson < 0){
+      numberPersonInput.value = "Bunday qiymat mavjud emas";
+    }
+  }
+  else if(summaInput.value != ""){
+    num1 = Number(btnPercentage25.textContent);
+    valueInput = Number(summaInput.value);
+    personSumma.textContent = valueInput * (num1 / 100);
+    totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+  }
+})
+
+btnPercentage50.addEventListener('click', (t) => {
+  t.preventDefault()
+  if(summaInput.value != "" && numberPersonInput.value != ""){
+    num1 = Number(btnPercentage50.textContent);
+    valueInput = Number(summaInput.value);
+    countPerson = Number(numberPersonInput.value);
+
+    if(countPerson > 0){
+      personSumma.textContent = (valueInput * (num1 / 100)) / countPerson;
+      totalSum.textContent = (valueInput + (valueInput * (num1 / 100))) / countPerson
+    }
+    else if(countPerson === 0){
+      personSumma.textContent = valueInput * (num1 / 100);
+      totalSum.textContent = valueInput + (valueInput * (num1 / 100));
+    }
+    else if(countPerson < 0){
+      numberPersonInput.value = "Bunday qiymat mavjud emas";
+    }
+  }
+  else if(summaInput.value != ""){
+    num1 = Number(btnPercentage50.textContent);
+    valueInput = Number(summaInput.value);
+    personSumma.textContent = valueInput * (num1 / 100);
+    totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+  }
+})
+
+btnPercentageCustom.addEventListener('input', (t) => {
+  t.preventDefault()
+  if(summaInput.value != "" && numberPersonInput.value != ""){
+    num1 = Number(btnPercentageCustom.value);
+    valueInput = Number(summaInput.value);
+    countPerson = Number(numberPersonInput.value);
+
+    if(countPerson > 0){
+      personSumma.textContent = (valueInput * (num1 / 100)) / countPerson;
+      totalSum.textContent = (valueInput + (valueInput * (num1 / 100))) / countPerson
+    }
+    else if(countPerson === 0){
+      personSumma.textContent = valueInput * (num1 / 100);
+      totalSum.textContent = valueInput + (valueInput * (num1 / 100));
+    }
+    else if(countPerson < 0){
+      numberPersonInput.value = "Bunday qiymat mavjud emas";
+    }
+  }
+  else if(summaInput.value != ""){
+    num1 = Number(btnPercentageCustom.value);
+    valueInput = Number(summaInput.value);
+    personSumma.textContent = valueInput * (num1 / 100);
+    totalSum.textContent = valueInput + (valueInput * (num1 / 100))
+  }
 })
